@@ -1,0 +1,417 @@
+@charset "ISO-8859-1";
+
+:root{
+	--bt-cadastrar: green;
+	--bt-atualizar: orange;
+	--bt-excluir: red;
+	--bt-listar: #077fff;
+	--bt-consultar: gray;
+	--imagem-principal:  url("estoque.jpeg");
+	--menu: #077fff
+}
+
+/*Painel Login*/
+.painel{
+  padding: 40px 80px 162px 50px;
+  background-image: var(--imagem-principal);
+  background-size: cover;
+
+}
+
+
+/* Login */
+.loginform {
+	
+	width: 450px;
+	margin: auto;
+	overflow: hidden;
+	background: #ffffff;
+	font-family: 'open_sanslight';
+	border-radius: 5px;
+	padding: 10px 20px 20px 20px;
+	position: relative;
+	padding-bottom: 80px;
+	margin-right:-30px;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.loginform h1, .loginform h3 {
+	text-align: center;
+}
+
+.loginform .inputlogin  {
+	font-family: 'open_sanslight';
+	font-size: 1em;
+	display: block;
+	padding: 15px 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	border: 1px solid #ddd;
+	transition: border-width 0.2s ease;
+	border-radius: 50px;
+	color: black;
+}
+
+
+.loginform input[type="submit"] {
+	width: 100%;
+	padding: 10px 10px;
+	background: #2cc3c8;
+	color: #fff;
+	font-size: 1.5em;
+	display: block;
+	border: none;
+	cursor: pointer;
+	margin-top: 20px;
+	max-height: 60px;
+	border-radius: 18px;
+	transition: all 0.1s ease-out;
+	border-bottom-width: 7px;
+}
+
+body {
+	background-color: #eaeff6;
+	background-position: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Roboto", sans-serif;
+	color: #333;
+	margin: 0;
+}
+
+#menu ul {
+	padding: 5px;
+	margin: 0px;
+	list-style: none;
+	background-color: #077fff;
+	font-size: 18px;
+	display: flex;
+    justify-content: center;
+}
+
+.menu2{
+	display: flex;
+    justify-content: end;
+}
+
+#menu ul li {
+	display: inline;
+}
+
+#menu ul li a {
+	font-size: 20px;
+	padding: 2px 10px;
+	display: inline-block;
+	background-color: #ffffff;
+	color: black;
+	text-decoration: none;
+}
+
+#menu ul li a:hover {
+	color: white;
+	background-color: black;
+}
+
+/* Fornecedor */
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="submit"] {
+    width: calc(100% - 20px);
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: auto;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+div.output {
+    margin-top: 20px;
+}
+
+div.output p {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+div.output h2 {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Estilizando o layout para telas menores */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="submit"] {
+        width: calc(100% - 10px);
+        margin: 5px 0;
+        padding: 8px;
+    }
+
+    table th,
+    table td {
+        padding: 6px;
+    }
+}
+
+/* Produto */
+body, div, form, table {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-image: url("estoque.jpeg");
+	margin: 0;
+	padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 15px;
+}
+
+.gheader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn-sair {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Estilos para o formulário */
+form {
+	max-width: 600px;
+	margin: 20px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="number"], form input[type="text"], form input[type="date"]
+	{
+	width: calc(100% - 10px);
+	margin: 5px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+	width: 110px;
+	padding: 10px;
+	margin: 5px;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* Estilos para as mensagens de saída e erro */
+div p {
+	margin: 0;
+	padding: 10px;
+}
+
+h2 {
+	color: red;
+}
+
+h5{
+	margin-top: 40px;
+	color: white;
+	font-family: didot;
+	font-size: 70px;
+	font-weight: bold;
+}
+
+/* Estilos para a tabela de produtos */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+table th, table td {
+	border: 1px solid #ccc;
+	padding: 8px;
+	text-align: left;
+}
+
+table th {
+	background-color: #f4f4f4;
+	color: #333;
+}
+
+/* CSS para o conteúdo dos formulários e header */
+.content {
+	display: flex;
+	justify-content: space-around; /* ou outro alinhamento que preferir */
+	flex-wrap: wrap;
+	/* permite que os formulários quebrem para uma nova linha se a largura for insuficiente */
+	margin: 20px; /* ajuste conforme necessário */
+}
+
+.form-section {
+	flex: 1;
+	/* Cada seção terá uma largura igual, ajuste conforme necessário */
+	margin: 10px;
+	padding: 20px;
+	background-color: #fff; /* Apenas para destacar as seções */
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista Fornecedor*/
+.forn{
+	background-color: white;
+}
+
+/* Lista Produto*/
+.prod{
+	background-color: white;
+}
+/* Lista Estoque */
+.est {
+	background-color: white;
+}
+
+/* Relatório */
+
+/*botões*/
+.bt-cadastrar{
+	background-color: var(--bt-cadastrar);
+}
+
+.bt-atualizar{
+	background-color: var(--bt-atualizar);
+}
+
+.bt-excluir{
+	background-color: var(--bt-excluir);
+}
+
+.bt-listar{
+	background-color: var(--bt-listar);
+}
+
+.bt-consultar{
+	background-color: var(--bt-consultar);
+}
+
+.bt-menu{
+	background-color: red;
+}
+
+.bt-nivel{
+	background-color: red;
+}
+
+.bt-venc{
+	background-color: #077fff;
+}
+/*tela fornecedor*/
+.bg-fundo{
+  	background-size: cover;
+}
+
+.intro{
+	width: auto;
+	height: 670px;
+	  background-size: cover;
+	  background-image: url("estoque.jpeg");
+	  opacity: 0.8;
+	
+}
+
+.paragrafo{
+	
+	color: black;
+}
+
+/* Aqui você coloca os estilos do botão */
+.custom-button {
+	padding: 10px 20px; /* Ajuste o preenchimento conforme necessário */
+	margin-left: 200px;
+	font-size: 16px; /* Tamanho da fonte */
+	background-color: #3498db; /* Cor de fundo do botão */
+	color: white; /* Cor do texto do botão */
+	border: none; /* Remover borda */
+	border-radius: 5px; /* Arredondar cantos */
+	cursor: pointer; /* Cursor ao passar por cima do botão */
+}
+
+.funcionario {
+	text-align: center;
+}
